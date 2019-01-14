@@ -1,0 +1,68 @@
+//  This is the file that budget.py pulls from.  I've filled in some data as an example of how to use.
+//  NOTE: if you have // before any line it will be a comment ;)
+//  Don't remove commas!
+//  For DAY OF WEEK: 
+//		monday = 0 
+//		tuesday = 1
+//		wednesday = 2
+//		thursday = 3
+//		friday = 4
+//		saturday = 5
+//		sunday = 6
+
+[OUTPUT FILE NAME]
+// name of csv file
+My Budget
+
+[START DATE]
+// can be 'Year-month-day' or 'today'
+today
+
+[END DATE]
+// 'Year-month-day'
+2020-8-24
+
+[CURRENT BALANCE]
+// int or float (how much money you have right now)
+10000
+
+[ONE TIME INCOME] 
+// AMOUNT, DATE, NOTES
+1000, 2019-2-15, Tax Return
+
+[ONE TIME EXPENSES]
+// AMOUNT, DATE, NOTES
+
+[WEEKLY INCOME]
+// start/end date can be date or today/forever 
+//AMOUNT, DAY OF WEEK, NOTES, START DATE, END DATE
+1000, 	3, 	Wages, today, forever
+
+[WEEKLY EXPENSES] 
+//AMOUNT, DAY OF WEEK, NOTES, START DATE, END DATE
+60,  6, Fuel, today, forever
+100, 6, Food, today, forever
+
+[BIWEEKLY INCOME]
+// AMOUNT, DAY OF WEEK, NOTES, START DATE, END DATE, ODD/EVEN WEEK
+// for even weeks = 0, for odd weeks = 1
+
+[BIWEEKLY EXPENSES] 
+// AMOUNT, DAY OF WEEK, NOTES, START DATE, END DATE, ODD/EVEN WEEK
+// for even weeks = 0, for odd weeks = 1
+
+[MONTHLY INCOME]
+// AMOUNT, DAY OF MONTH, NOTES, START DATE, END DATE
+
+[MONTHLY EXPENSES] 
+// AMOUNT, DAY OF MONTH, NOTES, START DATE, END DATE
+2000,	1, 		Rent, today, forever
+10, 	1, 		Spotify, today, forever
+
+	
+
+
+
+
+
+
