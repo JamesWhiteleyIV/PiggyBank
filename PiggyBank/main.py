@@ -5,7 +5,7 @@ import time
 from dateutil.relativedelta import relativedelta
 
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(FILE_DIR, "..", "data") 
+OUTPUT_DIR = os.path.join(FILE_DIR, "..", "output") 
 BUDGET_FILE = os.path.join(FILE_DIR, "budget.txt") 
 
 class Budget(object):
@@ -177,7 +177,12 @@ class Budget(object):
         minute = date.minute
         date = '{}-{}-{}-{}{}'.format(year, month, day, hour, minute)
         fname = '{}-{}.csv'.format(fname, date)
-        outpath = os.path.join(DATA_DIR, fname)
+        
+        # make sure data dir exists
+        if not os.path.exists(OUTPUT_DIR):
+            os.makedirs(OUTPUT_DIR)
+        
+        outpath = os.path.join(OUTPUT_DIR, fname)
         self.grid.to_csv(outpath)
 
 
